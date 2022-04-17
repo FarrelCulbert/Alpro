@@ -1,4 +1,4 @@
-angka_awal = 2
+angka_awal = 1
 jarak_permulaan = 1
 baris = 7
  
