@@ -18,7 +18,7 @@
 # print("banyak bilangan ganjil :",len(y))
 
 #tanpa input
-nilai= [10, 5, 1, 4, 9]
+nilai= [#masukan nilai]
 c=[]
 x=[]
 y=[]
