@@ -1,0 +1,44 @@
+#tampa parameter
+def perkalian():
+    a = 2
+    b = 4
+    c = a*b
+    print(c)
+    
+#dengan parameter    
+def pembagian(a,b):
+    c = int(a/b)
+    print(c)
+    
+# luas segitiga   
+def luas_segitiga(alas, tinggi):
+    luas = (alas * tinggi) / 2
+    print ("Luas segitiga:", luas)
+
+# Pemanggilan fungsi
+luas_segitiga(4, 6)
+pembagian(10,5)
+
+================================
+a = int(input("masukan nilai : "))
+b = int(input("masukan nilai : "))
+
+def penjumlahan (a,b):
+    hasil = a + b
+    print ("hasil : ", hasil)
+def pengurangan (a,b):
+    hasil = a - b
+    print ("hasil : ", hasil)
+    
+penjumlahan(a,b)
+pengurangan(a,b)
+
+================================
+def luas_persegi(sisi):
+    luas = sisi * sisi
+    return luas
+def luas_persegi_(sisi):
+    luas = sisi * sisi
+    
+x = luas_persegi_(4)
+print (x)
