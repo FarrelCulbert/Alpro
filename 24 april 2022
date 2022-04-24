@@ -1,0 +1,73 @@
+nama =[]
+
+def tampil():
+    print('=====================')
+    print('Data Nama')
+    index=0
+    if len(nama)<= 0 :
+        print ("data kosong")
+    else:
+        for name in nama :
+            print(str(index)+". "+ name)
+            index = index +1
+    print('=====================')
+
+def tambah():
+    tambah_nama = input("Masukan Nama : ")
+    nama.append(tambah_nama)
+    print("Nama Sudah Ditambahkan")
+
+def ubah():
+    tampil()
+    index = int(input("Masukan No Index : "))
+    nama_lama = nama[index]
+    nama_baru = input("Masukan Nama Baru : ")
+    nama [index]= nama_baru
+    print(nama_lama,"diperbarui menjadi",nama_baru)
+
+def hapus ():
+    tampil()
+    index = int(input("Masukan No Index : "))
+    tambah_nama=nama[index]
+    del nama[index]
+    print(tambah_nama,"Telah Dihapus")
+
+#def keluar():
+    #x = input('apakah anda ingin mengakhiri program(y/n) > ')
+    #while x.lower() not in ('y','n'):
+        #print('peritah salah')
+        #x = input('apakah anda ingin mengakhiri program(y/n) > ')
+        #if x == 'y':
+            #print('terimakasih')
+            #break
+       
+
+
+def nama_orang():
+    print("========================")
+    print("[1] Tampilkan Data Nama ")
+    print("[2] Tambahkan Data Nama ")
+    print("[3] Ubah Data Nama ")
+    print("[4] Hapus Data Nama ")
+    #print("[5] Keluar")
+    print("========================")
+
+    kode = input("masukan kode :")
+    if kode == '1':
+        tampil()
+    elif kode == '2':
+        tambah()
+    elif kode == '3':
+        ubah()
+    elif kode == '4':
+        hapus()
+    #elif kode =='5':
+        #keluar()
+    else:
+        print("Kode Salah")
+        
+while True:
+    nama_orang()
+    
+    #while keluar() == 'y':
+        #break
