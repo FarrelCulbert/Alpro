@@ -1,0 +1,7 @@
+list1 = ["Mike","","Emma","Kelly","","Brad"]
+
+print(list1)
+
+del list1[1] , list1[3]
+
+print('setelah hapus list kosong : ', list1)
