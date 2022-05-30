@@ -1,0 +1,13 @@
+hobi=["membaca","berenang","menggambar","belajar","bersepeda","olahraga","menulis","memasak","bermusik","bernyanyi"]
+stop=False
+
+print(hobi)
+print('list indek 3-5 :',hobi[3:6])
+
+while(not stop):
+    print(hobi)
+    tanya = input("ulang lagi? (y/t): ")
+    if tanya == "t":
+        stop=True
+
+print('panjang list :',len(hobi))
