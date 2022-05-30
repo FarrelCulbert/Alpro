@@ -1,0 +1,18 @@
+hobi = []
+i = 0
+stop = False
+
+while(not stop): 
+    tambah_hobi=input('input hobi yang ke-{}:'.format(i))
+    hobi.append(tambah_hobi)
+
+    i += 1
+
+    tanya =input('mau isi lagi?(y/t):')
+    if tanya == 't' :
+        stop = True
+
+print('=======================')
+print('kamu memiliki {} hobi'. format(len(hobi)))
+for a in hobi :
+    print("- {}".format(a))
