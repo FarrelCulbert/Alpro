@@ -1,0 +1,34 @@
+import random
+
+angka_a=random.randint(1,10)
+angka_b=random.randint(1,10)
+
+if angka_a == 7:
+    while True :
+        angka_a
+
+if angka_b == 4:
+    while True:
+        angka_b
+
+print('angka a:',angka_a)
+print('angka b:',angka_b)
+
+print('apakah',angka_a,'lebih besar dari',angka_b,'?')
+print('(y/t)')
+jawab = input('masukan jawaban = ')
+
+if jawab == 'y':
+    if angka_a>angka_b:
+        print('benar')
+    elif angka_a<angka_b:
+        print('salah')
+    elif angka_a==angka_b:
+        print('angka sama')
+elif jawab == 't':
+    if angka_a>angka_b:
+        print('salah')
+    elif angka_a<angka_b:
+        print('benar')
+    elif angka_a==angka_b:
+        print('angka sama')
